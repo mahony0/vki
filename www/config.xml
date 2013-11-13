@@ -6,10 +6,10 @@
         id        = "mahony.vucutkitle"
         version   = "1.1.0">
 
-    <name>Sonsuz Sayılar</name>
+    <name>Vücut Kitle Indeksi</name>
 
     <description>
-        Bu uygulama ile 450 karaktere kadar olan tum sayilarin Turkce karsiligini ogrenebileceksiniz.
+        Vücut kitle indeksi (VKI), vücut ağırlığının (kg), boy uzunluğunun metre cinsinden karesine bölünmesiyle hesaplanır. İdeal ağırlık ise ulaşılmak istenen VKI'nin, boy uzunluğunun karesi ile çarpılmasıyla elde edilir.
     </description>
 
     <author href="http://namli.mavitm.com" email="mahmudnamli@gmail.com">
