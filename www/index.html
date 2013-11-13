@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vücut Kitle Endeksi Hesaplama - mahony0</title>
+
+	<link rel="stylesheet" href="css/minified.css" />
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script src="phonegap.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="page1">
+
+    <div data-theme="a" data-role="header">
+        <h1> Vücut Kitle İndeksi Hesaplama </h1>
+    </div>
+
+	<!-- Birinci Kısım -->
+    <div data-role="content" id="birinci">
+        <div data-role="collapsible-set" data-inline="true" data-mini="true" data-theme="b" data-content-theme="c">
+            <div data-role="collapsible" data-collapsed="true">
+                <h3> Bilgi İçin Tıklayın..</h3>
+
+				<p class="redC">* Boyunuzu cm (santimetre) olarak girin. <i class="greenC">Örnek: 175</i></p>
+				<p class="redC">* Kilonuzu kg (kilogram) olarak girin. <i class="greenC">Örnek: 75</i></p>
+				<p class="redC">* Eğer vücut kitle indeksiniz 25'in üzerinde ise tıbbi destek alın!</p>
+            </div>
+        </div>
+
+        <div data-role="fieldcontain">
+            <label for="textinput1"> Boyunuzu Girin: </label>
+            <input name="" id="boy" onkeypress='return yalnizSayi(event)' placeholder="" value="" type="text">
+        </div>
+
+        <div data-role="fieldcontain">
+            <label for="textinput2"> Kilonuzu Girin: </label>
+            <input name="" id="kilo" onkeypress='return yalnizSayi(event)' placeholder="" value="" type="text">
+        </div>
+
+        <input data-theme="a" data-icon="check" data-iconpos="left" value="Oranı Hesapla" onclick="hesaplaBtn();" type="submit">
+    </div>
+
+    <!-- İkinci Kısım -->
+    <div data-role="content" id="ikinci" style="display: none;">
+        <div data-role="collapsible-set" data-inline="true" data-mini="true" data-theme="b" data-content-theme="c">
+            <div data-role="collapsible" data-collapsed="true">
+                <h3> Bilgi </h3>
+				<p class="redC">* Eğer vücut kitle indeksiniz <u>25</u>'in üzerinde ise tıbbi destek alın!</p>
+            </div>
+        </div>
+
+    	<h3> Vücut Kitle İndeksiniz (BMI):<br /> <font class="redC" id="bmi"></font> kg/m2 </h3>
+    	<h3> Sonuç:<br /> <font class="redC" id="sonuc"></font> </h3>
+
+        <a id="alert" href="#">
+            <img id="alert" src="img/new.gif" alt="image">
+        </a>
+
+        <h5 id="bilgi"></h5>
+
+        <input data-theme="a" data-icon="check" data-iconpos="left" value="Başka Hesaplama Yap" onclick="document.location.reload(true);" type="submit">
+    </div>
+</div>
+	<br />
+</body>
+</html>
